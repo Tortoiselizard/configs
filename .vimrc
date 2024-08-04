@@ -18,6 +18,9 @@ call plug#begin('~/.vim/plugged')
 " theme
 Plug 'nanotech/jellybeans.vim'
 
+"IDE
+Plug 'mhinz/vim-signify' "Para mostrar los cambios sin commit
+
 call plug#end()
 
 colorscheme jellybeans
