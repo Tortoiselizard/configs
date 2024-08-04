@@ -1,6 +1,6 @@
 set mouse=a
 set background=dark
-set number
+set number "Muestra una columna que enumera las lineas usadas en el archivo"
 syntax enable
 set showcmd
 set encoding=utf-8
