@@ -18,6 +18,12 @@ call plug#begin('~/.vim/plugged')
 " theme
 Plug 'nanotech/jellybeans.vim'
 
+" status bar
+Plug 'itchyny/lightline.vim' "Barra de estado
+
+" typing
+Plug 'jiangmiao/auto-pairs' "Cerrado de parentesis
+
 "IDE
 Plug 'mhinz/vim-signify' "Para mostrar los cambios sin commit
 
