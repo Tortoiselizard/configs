@@ -35,7 +35,26 @@ Plug 'tpope/vim-surround' "Para encerrar un texto entre comillas, parentesis, et
 "IDE
 Plug 'mhinz/vim-signify' "Para mostrar los cambios sin commit
 
+"git
+Plug 'tpope/vim-fugitive'
+
+"Tree
+Plug 'preservim/nerdtree'
+
+
 call plug#end()
 
 colorscheme jellybeans
 let g:jellybeans_contrast_dark="hard"
+
+" Lightlane
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ 'active': {
+      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
+      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
