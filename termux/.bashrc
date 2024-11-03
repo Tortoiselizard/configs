@@ -13,3 +13,7 @@ alias gm='git merge'
 
 # Vim
 alias v='vim'
+
+alias obsidian-push='rsync -avh --delete --itemize-changes ~/storage/shared/DigitalBraind/ ~/DigitalBraind/ && rclone sync -v ~/DigitalBraind/ obsidian:'
+
+alias obsidian-pull='rclone sync -v obsidian: ~/DigitalBraind/ && rsync -avh --delete --itemize-changes ~/DigitalBraind/ ~/storage/shared/DigitalBraind/'
