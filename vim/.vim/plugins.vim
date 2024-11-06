@@ -24,9 +24,8 @@ Plug 'mhinz/vim-signify' "Para mostrar los cambios sin commit
 "Plug 'junegunn/fzf' Para buscar archivos y textos que esten dentro de los archivos
 "Plug 'terryma/vim-multiple-cursors' Para editar el archivo con varios cursores al mismo tiempo
 "Plug 'easymotion/vim-easymotion' Para buscar rapidamente en un archivo una cadena de caracteres que le indiques.
-"Plug 'yggdroot/indentline' Para marcar la indentacion de funciones en tu archivo de codig
-"Plug 'scrooloose/nerdcommenter' Para comentar rañidamente una linea de
-"codigo.
+Plug 'yggdroot/indentline' "Para marcar la indentacion de funciones en tu archivo de codigo
+"Plug 'scrooloose/nerdcommenter' Para comentar rañidamente una linea de codigo.
 
 "git
 Plug 'tpope/vim-fugitive' "Para usar git desde vim
