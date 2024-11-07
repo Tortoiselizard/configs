@@ -1,3 +1,4 @@
+set nocompatible
 set mouse=a
 set background=dark
 set number
