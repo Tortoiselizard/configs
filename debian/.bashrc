@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 # Adding other PATH
-export PATH="/sbin:/usr/sbin:/usr/local/sbing:$PATH"
+export PATH="/sbin:/usr/sbin:/usr/local/sbing:PATH"
 
 # GIT
 alias gs='git status'
@@ -127,9 +127,6 @@ alias gm='git merge'
 
 # Vim
 alias v='vim'
-
-# Neovim
-alias nv='nvim'
 
 # Adding other alias
 alias obsidian-pull="rclone sync -v obsidian: ~/Programs/obsidian/Digital_Brain/"
