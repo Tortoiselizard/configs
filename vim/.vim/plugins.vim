@@ -35,8 +35,7 @@ Plug 'preservim/nerdtree'
 
 "tmux
 "Plug 'benmills/vimux'
-"Plug 'christoomey/vim-tmux-navigator' Para moverte entre los diferentes
-"paneles
+Plug 'christoomey/vim-tmux-navigator' 
 
 "test
 "Plug 'tyewang/vimux-jest-test' Para moverte entre diferentes paneles
