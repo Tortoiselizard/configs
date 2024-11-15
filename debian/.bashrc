@@ -118,9 +118,12 @@ if ! shopt -oq posix; then
 fi
 
 # Adding other PATH
-export PATH="/sbin:/usr/sbin:/usr/local/sbing:PATH"
+export PATH="/sbin:/usr/sbin:/usr/local/sbing:$PATH"
 
-# GIT
+# GIT configs
+
+. ~/config/debian/git-completion.bash
+
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
