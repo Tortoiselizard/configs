@@ -122,7 +122,7 @@ export PATH="/sbin:/usr/sbin:/usr/local/sbing:$PATH"
 
 # GIT configs
 
-. ~/config/debian/git-completion.bash
+. ~/git-completion.bash
 
 alias gs='git status'
 alias ga='git add'
