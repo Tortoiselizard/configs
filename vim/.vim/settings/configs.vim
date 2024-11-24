@@ -1,4 +1,3 @@
-:vert diffsplit archivo2
 set hidden
 set nocompatible
 set mouse=a
