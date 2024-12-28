@@ -1,0 +1,67 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "prettier.tabWidth": 4,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#A6D91A", "#08460E"],
+    "vim.statusBarColors.insert": ["#4386A3", "#FFFFFF"],
+    "vim.statusBarColors.visual": ["#5B4957", "#FFFFFF"],
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": ["#007ACC", "#FFFFFF"],
+    "vim.statusBarColors.searchinprogressmode": ["#007ACC", "#FFFFFF"],
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-i>"],
+            "commands": ["editor.action.revealDefinition"],
+            "silent": true
+        },
+        {
+            "before": ["<C-t>"],
+            "commands": ["workbench.action.togglePanel"],
+            "silent": true
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"],
+            "silent": true
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"],
+            "silent": true
+        },
+        {
+            "before": ["<C-f>"],
+            "commands": ["actions.find"],
+            "silent": true
+        }
+    ],
+    "vim.handleKeys": {
+        // "<C-f>": false,
+    },
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#B48EAD",
+        "statusBar.noFolderBackground": "#B48EAD",
+        "statusBar.debuggingBackground": "#B48EAD",
+        "statusBar.foreground": "#08460E",
+        "statusBar.debuggingForeground": "#08460E"
+    }
+}
