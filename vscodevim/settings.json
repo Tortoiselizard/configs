@@ -29,6 +29,11 @@
             "before": ["<C-t>"],
             "commands": ["workbench.action.togglePanel"],
             "silent": true
+        },
+        {
+            "before": ["<C-b>", "<C-c>"],
+            "commands": ["workbench.action.closeSidebar"],
+            "silent": true
         }
     ],
     "vim.insertModeKeyBindings": [
