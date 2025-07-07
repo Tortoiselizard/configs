@@ -1,66 +1,124 @@
 {
-    "workbench.colorTheme": "Default Dark Modern",
-    "prettier.tabWidth": 4,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "eslint.enable": true,
+    "eslint.run": "onType",
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint", // Usa ESLint como formateador
+    "editor.formatOnSave": false, // Habilita el formateo con ESLint
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always" // Corrige errores lint y aplica formato
+    }, // Habilita el formateo con ESLint
+    "[javascript]": { // Aplica solo a archivos JS (opcional)
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
-    "editor.formatOnSave": true,
+    "[typescript]": { // Para TypeScript (opcional)
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "workbench.colorTheme": "Default Dark Modern",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.wordWrap": "on",
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": ["#A6D91A", "#08460E"],
-    "vim.statusBarColors.insert": ["#4386A3", "#FFFFFF"],
-    "vim.statusBarColors.visual": ["#5B4957", "#FFFFFF"],
+    "vim.statusBarColors.normal": [
+        "#A6D91A",
+        "#08460E"
+    ],
+    "vim.statusBarColors.insert": [
+        "#4386A3",
+        "#FFFFFF"
+    ],
+    "vim.statusBarColors.visual": [
+        "#5B4957",
+        "#FFFFFF"
+    ],
     "vim.statusBarColors.visualline": "#B48EAD",
     "vim.statusBarColors.visualblock": "#A3BE8C",
     "vim.statusBarColors.replace": "#D08770",
-    "vim.statusBarColors.commandlineinprogress": ["#007ACC", "#FFFFFF"],
-    "vim.statusBarColors.searchinprogressmode": ["#007ACC", "#FFFFFF"],
+    "vim.statusBarColors.commandlineinprogress": [
+        "#007ACC",
+        "#FFFFFF"
+    ],
+    "vim.statusBarColors.searchinprogressmode": [
+        "#007ACC",
+        "#FFFFFF"
+    ],
     "vim.statusBarColors.easymotionmode": "#007ACC",
     "vim.statusBarColors.easymotioninputmode": "#007ACC",
     "vim.statusBarColors.surroundinputmode": "#007ACC",
     "vim.normalModeKeyBindings": [
         {
-            "before": ["<C-i>"],
-            "commands": ["editor.action.revealDefinition"],
+            "before": [
+                "<C-i>"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ],
             "silent": true
         },
         {
-            "before": ["<C-t>"],
-            "commands": ["workbench.action.togglePanel"],
+            "before": [
+                "<C-t>"
+            ],
+            "commands": [
+                "workbench.action.togglePanel"
+            ],
             "silent": true
         },
         {
-            "before": ["<C-b>", "<C-c>"],
-            "commands": ["workbench.action.closeSidebar"],
+            "before": [
+                "<C-b>",
+                "<C-c>"
+            ],
+            "commands": [
+                "workbench.action.closeSidebar"
+            ],
             "silent": true
         }
     ],
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": [">"],
-            "commands": ["editor.action.indentLines"],
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ],
             "silent": true
         },
         {
-            "before": ["<"],
-            "commands": ["editor.action.outdentLines"],
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ],
             "silent": true
         },
         {
-            "before": ["<C-f>"],
-            "commands": ["actions.find"],
+            "before": [
+                "<C-f>"
+            ],
+            "commands": [
+                "actions.find"
+            ],
             "silent": true
         }
     ],
     "vim.handleKeys": {
         // "<C-f>": false,
+        "<C-s>": false,
     },
     "workbench.colorCustomizations": {
         "statusBar.background": "#A6D91A",
@@ -68,5 +126,6 @@
         "statusBar.debuggingBackground": "#A6D91A",
         "statusBar.foreground": "#08460E",
         "statusBar.debuggingForeground": "#08460E"
-    }
+    },
+    "json.schemas": [],
 }
